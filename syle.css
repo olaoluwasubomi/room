@@ -1,0 +1,159 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+}
+/* FIRST SECTION */
+.introduction{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    justify-content:space-between;
+}
+.background{
+    width:60%;
+    background-image:url(images/desktop-image-hero-1.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+nav{
+    margin:50px 50px 440px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-between;
+    width:40%;
+}
+
+nav a{
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    text-decoration:none;
+    font-size:0.6em;
+}
+.name{
+    font-size:1.3em;
+}
+.text{
+    width:40%;  
+}
+.space , .second-text{
+    padding:5px 60px 20px; 
+    margin:30px 30px 20px;
+    width:85%;
+    /* background:red; */
+}
+.space h4{
+    font-size:2em;
+    color:#000;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
+}
+.space p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.8em;
+    color:rgb(121, 118, 118);
+    line-height:1.5em;
+    margin-top:20px;
+}
+.space div{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.space a{
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+    text-transform:uppercase;
+    word-spacing:1em;
+    font-size:0.9em;
+    font-weight:bold;
+}
+.space img{
+    margin-left:20px;
+    margin-top:2px;
+}
+/* END OF FIRST SECTION */
+
+/* THE SECOND SECTION */
+.second{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-between;
+
+}
+.second-text{
+    padding:0px 0px 0px 40px;
+}
+.second-text h5{
+    text-transform:uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:0.9em;
+    letter-spacing:0.4em;
+}
+.second-text p{
+    margin-top:10px;
+    font-size: 0.85em;
+    line-height: 1em;
+    color:rgb(92, 92, 92);
+    width:85%;
+    line-height:1.3em;
+}
+
+@media screen and (max-width:600px){
+  body{
+      width:100%;
+  }
+  /* FIRST SECTION */
+  .introduction{
+      flex-direction:column;
+      width:100%;
+  }
+  .background{
+      width:100%;
+  }
+  nav{
+      margin:20px 20px 250px;
+      width:100%;
+      align-items:center;
+      justify-content:center;
+  }
+  nav a{
+      display:none;
+  }
+  .name{
+      display:block;
+      text-align:center;
+  }
+  .text{
+      width:100%;
+  }
+  .space{
+      padding:0;
+  }
+  .space div{
+      margin-bottom:0;
+      margin-top:30px;
+  }
+   /* END OF FIRST SECTION */
+
+      /* THE SECOND SECTION */
+      .second{
+          flex-direction:column;
+      }
+      .second img{
+          width:100%;
+      }
+      .second-text{
+       
+          margin-top:20px;
+      }
+}
